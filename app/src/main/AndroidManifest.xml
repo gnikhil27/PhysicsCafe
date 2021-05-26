@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nik.iant.physicscafe">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bwpc"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bwpc"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhysicsCafe">
+        <activity android:name=".Options"></activity>
+        <activity android:name=".htmlViewer" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Questions" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
